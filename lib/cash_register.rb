@@ -23,6 +23,7 @@ class CashRegister
     else
       @items << item
     end
+    @last_item = item
   end
 
   def apply_discount
@@ -41,7 +42,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    
+
   end
 
 
